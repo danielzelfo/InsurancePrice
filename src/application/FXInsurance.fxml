@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="388.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXInsuranceController">
+   <children>
+      <Label alignment="CENTER" prefHeight="21.0" prefWidth="299.0" style="-fx-background-color: grey; -fx-font-weight: bold;" text="Insurance Price" textAlignment="CENTER" textFill="WHITE" />
+      <Label text="Insurance Type" />
+      <RadioButton fx:id="radHMO" mnemonicParsing="false" onAction="#radHMOnClick" text="HMO (health maintenance organization)" />
+      <RadioButton fx:id="radPPO" mnemonicParsing="false" onAction="#radPPOOnClick" text="PPO (preferred provider organization)" />
+      <Label />
+      <CheckBox fx:id="chkDental" mnemonicParsing="false" onAction="#chkDentalOnClick" text="dental insurance" />
+      <CheckBox fx:id="chkVision" mnemonicParsing="false" onAction="#chkVisionOnClick" text="vision insurance" />
+      <Button fx:id="btnSubmit" mnemonicParsing="false" onAction="#btnSubmitOnClick" prefHeight="31.0" prefWidth="301.0" text="Sumbit" textAlignment="CENTER" />
+      <TextArea fx:id="txtResult" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</VBox>
